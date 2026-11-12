@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas - Dinamicos balon Pie</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Dinamicos balon Pie</h2>
+            </div>
+            <ul class="nav__link">
+                <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="jugadores.html" class="nav__links">Jugadores</a></li>
+                <li class="nav__items"><a href="stats.html" class="nav__links">Estadisticas</a></li>
+                <li class="nav__items"><a href="equipaciones.html" class="nav__links">Equipaciones</a></li>
+                <li class="nav__items"><a href="index.html#info" class="nav__links">informacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="subtitle">Configura tu estrategia</h2>
+        <p class="about__paragraf" style="text-align: center; margin-bottom: 25px;">Reparte 500 puntos entre los 9 atributos del club</p>
+
+        <div class="formulario-caja">
+            <form method="POST">
+                <input type="hidden" name="equipo" value="dinamicos">
+
+                <label for="formacion">Formacion</label>
+                <select id="formacion" name="formacion" required>
+                    <option value="4-3-3">4-3-3</option>
+                    <option value="4-4-2">4-4-2</option>
+                    <option value="4-2-3-1">4-2-3-1</option>
+                    <option value="3-5-2">3-5-2</option>
+                    <option value="5-3-2">5-3-2</option>
+                </select>
+
+                <label for="ataque">Ataque</label>
+                <input type="number" id="ataque" name="ataque" min="30" max="80" value="70" required>
+
+                <label for="defensa">Defensa</label>
+                <input type="number" id="defensa" name="defensa" min="30" max="80" value="65" required>
+
+                <label for="velocidad">Velocidad</label>
+                <input type="number" id="velocidad" name="velocidad" min="30" max="80" value="70" required>
+
+                <label for="pase">Pase</label>
+                <input type="number" id="pase" name="pase" min="30" max="80" value="60" required>
+
+                <label for="posesion">Posesion</label>
+                <input type="number" id="posesion" name="posesion" min="30" max="80" value="50" required>
+
+                <label for="presion">Presion</label>
+                <input type="number" id="presion" name="presion" min="30" max="80" value="50" required>
+
+                <label for="resistencia">Resistencia</label>
+                <input type="number" id="resistencia" name="resistencia" min="30" max="80" value="45" required>
+
+                <label for="fisico">Fisico</label>
+                <input type="number" id="fisico" name="fisico" min="30" max="80" value="45" required>
+
+                <label for="porteria">Porteria</label>
+                <input type="number" id="porteria" name="porteria" min="30" max="80" value="45" required>
+
+                <label for="clave">Clave del entrenador</label>
+                <input type="password" id="clave" name="clave" required>
+
+                <button type="submit" class="cta">Guardar estrategia</button>
+            </form>
+        </div>
+
+        <div class="about__main">
+            <a href="index.html" class="cta">Volver al inicio</a>
+            <a href="jugadores.html" class="cta">Ver jugadores</a>
+            <a href="equipaciones.html" class="cta">Ver equipaciones</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Dinamicos balon Pie - Liga SIMSOCCER</p>
+    </footer>
+</body>
+
+</html>

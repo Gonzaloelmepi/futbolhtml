@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
- <meta charset="UTF-8">
- <title>Mi equipo - SIMSOCCER</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamicos balon Pie</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
+
 <body>
- <h1>Mi equipo</h1>
- <p>Bienvenido a la liga.</p>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Dinamicos balon Pie</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="jugadores.html" class="nav__links">Jugadores</a></li>
+                <li class="nav__items"><a href="stats.html" class="nav__links">Estadisticas</a></li>
+                <li class="nav__items"><a href="equipaciones.html" class="nav__links">Equipaciones</a></li>
+                <li class="nav__items"><a href="index.html#info" class="nav__links">informacion</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__tittle">Dinamicos balon Pie temporada oficial.</h1>
+            <p class="hero__paragraf">Web oficial del club creada poco a poco para organizar la plantilla y preparar los partidos de la liga escolar</p>
+            <a href="stats.html" class="cta">Comenzamo ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">?Que tenemos en el club?</h2>
+            <p class="about__paragraf">Todo lo necesario de nuestra plantilla,(Formacion, Ataque, Defensa, Velocidad, Equipaciones y mas)</p>
+            <div class="about__main">
+                <article class="about__icons">
+                    <a href="jugadores.html"><img src="imagenes/logo.png" class="about__icon" alt="Jugadores"></a>
+                    <h3 class="about__title">Jugadores</h3>
+                    <p class="about__paragraf">Lista de los titulares y suplentes convocados para jugar los partidos de esta jornada.</p>
+                </article>
+                <article class="about__icons">
+                    <a href="stats.html"><img src="imagenes/logo.png" class="about__icon" alt="Estadisticas"></a>
+                    <h3 class="about__title">Estadisticas</h3>
+                    <p class="about__paragraf">Panel del entrenador donde repartimos los 500 puntos del equipo segun el rival.</p>
+                </article>
+                <article class="about__icons">
+                    <a href="equipaciones.html"><img src="imagenes/logo.png" class="about__icon" alt="Equipaciones"></a>
+                    <h3 class="about__title">Equipaciones</h3>
+                    <p class="about__paragraf">Camisetas de local y visitante que usamos en los partidos oficiales de la liga.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowladge" id="info">
+            <div class="container knowladge__container">
+                <div class="knowladge__text">
+                    <h2 class="subtitle">Informacion del equipo. Quimica y futbol</h2>
+                    <p class="knowladge_paragraf">somos un club que juega al ataque y presiona arriba todo el partido. Nuestro estadio es el Laboratorio Central y luchamos cada balon hasta el pitido final.</p>
+                    <a href="jugadores.html" class="cta">Ver jugadores</a>
+                </div>
+                <figure class="knowladge__picture">
+                    <img src="imagenes/logo.png" class="knowladge__img" alt="Escudo Dinamicos">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price cotainer">
+            <h2 class="subtitile">Secciones principales del equipo</h2>
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Primer Equipo</p>
+                    <h3 class="plan__price">Plantilla</h3>
+                    <div class="price__items">
+                        <p class="price__features">Porteros</p>
+                        <p class="price__features">Defensas</p>
+                        <p class="price__features">Delanteros</p>
+                    </div>
+                    <a href="jugadores.html" class="price__cta">Entrar</a>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Entrenador</p>
+                    <h3 class="plan__price">500 Puntos</h3>
+                    <div class="price__items">
+                        <p class="price__features">Formacion</p>
+                        <p class="price__features">9 Atributos</p>
+                        <p class="price__features">Clave secreta</p>
+                    </div>
+                    <a href="stats.html" class="price__cta">Modificar</a>
+                </div>
+
+                <div class="price__element">
+                    <p class="price__name">Vestuario</p>
+                    <h3 class="plan__price">Camisetas</h3>
+                    <div class="price__items">
+                        <p class="price__features">1a Equipacion</p>
+                        <p class="price__features">2a Equipacion</p>
+                        <p class="price__features">Portero</p>
+                    </div>
+                    <a href="equipaciones.html" class="price__cta">Ver ropa</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Dinamicos balon Pie - Liga SIMSOCCER</p>
+    </footer>
 </body>
+
 </html>
